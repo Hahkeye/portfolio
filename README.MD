@@ -29,3 +29,4 @@ Several things done in this page include FlexBox, Flex, Google fonts and all aro
 
 If you would like to view this live. Github has this great utility called Gitpages where you can host stuff.
 If you click [here](https://hahkeye.github.io/portfolio/)
+![Deployed Page](./docs/deployed.png)
