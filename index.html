@@ -13,183 +13,93 @@
         <title>CSS Portfolio</title>
     </head>
     <!-- Bigger Grow Value on one flex box -->
+    <!-- <div class="page-wrapper">
+
+    </div> -->
     <body>
         <header>
-            <h1>Hunter Adcock's Portfolio</h1>
+            <h1 id="demotext">Hunter Adcock's Portfolio</h1>
             <nav>
                 <ul>
                     <li>
                         <!-- <a id="navlink" href="https://github.com/Hahkeye" target="_blank">GitHub</a> -->
-                        <a id="navlink" href="#applications">GitHub</a>
+                        <a id="navlink" href="https://github.com/Hahkeye">GitHub</a>
                     </li>
                     <li>
-                        <a id="navlink" href="#applications2">GitHub</a>
+                        <a id="navlink" href="#aboutme">About Me</a>
                     </li>
                     <li>
-                        <a id="navlink" href="https://www.linkedin.com/in/hunter-adcock-301967246/" target="_blank">About Me</a>
-                    </li>
-                    <li>
-                        <a id="navlink" href="mailto:realisvenator@gmail.com" target="_blank">Contact</a>
+                        <a id="navlink" href="#footer">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <div id="page-container">
-            <main>
-                <div class="content-sections">
-                    <h2>About Me </h2>
-                    <section>
-                        <div class="content-section-text">
+        <main>
+            <div id="page-cotainer">
+                <!-- <section class="content-section"> -->
+                    <section class="content-section">
+                        <h2><a href="https://hahkeye.github.io/portfolio/" target="_blank">Portfolio</a></h2>
+                         <div class="content-section-box">
+                             <div>
+                                 <p>Then there is this website your viewing currently. My web dev portfolio, still a work in progress</p>
+                             </div>
+                             <img src="./assets/images/port.png"/>
+                         </div>
+                     </section>
+                    <section class="content-section">
+                       <h2><a href="https://hahkeye.github.io/homework-01-coderefactor/ " target="_blank">Code Refactor</a></h2> <!-- https://hahkeye.github.io/homework-01-coderefactor/ -->
+                        <div class="content-section-box">
+                            <div>
+                                <p>Code refactor project where the goal was to make this webpage semanticly better. Did this by adding good semantic html tags where they are needed. This is done so it has better SEO and can be found better.</p>
+                            </div>
+                            <img src="./assets/images/seo.png"/>
+                        </div>
+                    </section>
+                    <section class="content-section">
+                        <h2><a href="https://github.com/Hahkeye/Syntaxr-Fleet" target="_blank">SRT Parser</a></h2>
+                        <div class="content-section-box">
+                            <div>
+                                <p>This is a praser I wrote in python for DJI Digital FPV srt files. This was written so after each flight I can go back and look at how well the video link does in certain enviorments.</p>
+                            </div>
+                            <img src="./assets/images/dji.jpg" alt="Photo the DJI digital FPV system"/>
+                        </div>
+                    </section>
+                    <section class="content-section">
+                        <h2>Syntaxr</h2>
+                        <div class="content-section-box">
+                            <div>
+                                <p>This is a project I made to be able to remotely control and view the progress of multiple 3d printers. Under the hood it is python with a flask user facing side. </p>
+                            </div>
+                            <img src="./assets/images/Ende.jpg">
+                        </div>
+                    </section>
+                <!-- </section> -->
+                <section class="content-section">
+                    <h2 id="aboutme">About Me </h2>
+                    <div class="content-section-box">
+                        <div>
                             <p>Age: 23</p>
                             <p>Name: Hunter Adcock</p>
                             <p>Hobbies: I like to bike and roler blade in my free time. I also like to program and mess with RC equipemt.</p>
                             <p>Favoriote Food: Big fan of Chick-Fl-A and Rasin Canes</p>
                         </div>
-                       
-                        <!-- <ul>
-                            <li>Age: 23</li>
-                            <li>Name: Hunter Adcock</li>
-                            <li>Hobbies: I like to bike and roller blade in my free time. I also like to program and mess with RC equipment.</li>
-                            <li>Favorite Foods:
-                                I am a big fan of ChickFla and rasin canes
-                            </li>
-                            <li></li>
-                        </ul> -->
                         <img src="./assets/images/photo.jpg" alt="Picture of Myself with a snazy shirt a brat and water."/>
-                    </section>    
-                </div>
-                <div class="content-sections">
-                    <h2>Work</h2>
-                    <section>
-                        <p>Article of something or other</p>
-                    </section>
-                </div>
-                <div class="content-sections">
-                    <h2>Contact</h2>
-                    <section>
-                        <p>Article of something or other</p>
-                    </section>
-                </div>
-
-                <section>
-                    <h2>Fictional-Dollop</h2>
-                    <p>https://github.com/Hahkeye/fictional-dollop</p>
+                    </div>
                 </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
+                <section class="content-section">
+                    <h2>Contact Me</h2>
+                    <div class="content-section-box">
+                        <div>
+                            <p>Email me <a href="mailto:realisvenator@gmail.com">here</a></p>
+                        </div>
+                        <img src="./assets/images/snail.jpg" alt="A picture of a mail carrying bird.">
+                    </div>
                 </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2 id="applications2">Contact</h2>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-
-                <section >
-                    <h2 id="applications">Contact</h2>
-                    <p>Article of something or other</p>
-                </section>
-                <!-- <section>
-                    <h2 id="applications">Contact</h2>
-                    <p>Article of something or other</p>
-                </section> -->
-            </main>
-        </div>
+            </div>
+        </main>
         <footer id="footer">
-            <h3>CC Me</h3>
+            <h3>Copyright © 2022 Hunter Adcock</h3>
+            
         </footer> 
     </body>
 </html>

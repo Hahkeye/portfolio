@@ -2,13 +2,14 @@
     font-family: 'Poppins';
     src: url('./font/Poppins/Poppins-Black.ttf');
 } */
-html body{
+html, body{
     font-family: 'Poppins', sans-serif;
 }
 /* Hex codes: Peach #FCEDDA, Burnt Orange #EE4E34 */
 header{
     background-color: #EE4E34;
-    display: inline;
+    /* display: inline; */
+    width: 100%;
 }
 
 header h1{
@@ -18,107 +19,120 @@ header h1{
     padding-bottom: 1em;
 }
 
-body{
-    background-color: #FCEDDA;
-    background:linear-gradient(0deg, rgba(252, 237, 218, 0.5), rgba(252, 237, 218, 0.5)),url(./images/plane2.jpg);
-    background-size: cover;
-    flex-direction: column;
+@media screen and (min-width: 550px){
+    header nav ul{
+        width: auto;
+        margin-top:0;
+    }
+    header h1{
+        order: 1;
+    }
 }
-/* padding is in the element maring is outside */
-#navlink{
-    font-size: 2em;
-    text-decoration: none;
-    margin: 1em;
-    color: black;
-    font-weight: bold;
-}
-#navlink:hover{
-    text-shadow: 2px 2px grey;
-    /* border: 4px groove grey; */
-    /* border-left: 3px solid black;
-    border-right: 3px solid black; */
-} 
 
 nav{
     text-align: right;
-    
 }
 
 nav ul li{
     display: inline;
 }
 
-main {
-    align-content: center;
-    width: 100%
-}
-#paige-cotainer{
-    align-content: center;
-    width: 100%;
-}
-
-#page-container section{
-    border: 4px solid black;
-    -webkit-border-radius: 13px;
-    border-radius: 13px;
-    width: fit-content;
-    height: auto;
+/* padding is in the element maring is outside */
+#navlink{
+    font-size: 2em;
+    text-decoration: none;
     margin: 1em;
+    margin-bottom: 1em;
+    color: black;
+    font-weight: bold;
+    
+}
+#navlink:hover{
+    text-shadow: 2px 2px grey;
+    border: 3px solid black;
+    /* border: 4px groove grey; */
+    /* border-left: 3px solid black;
+    border-right: 3px solid black; */
+} 
+
+#demotext {  /* Change this name if you are going to keep generated with this https://html-css-js.com/css/generator/text-shadow/ */
+    color: #FFFFFF;
+    background: #EE4E34;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    color: #FFFFFF;
+    background: #EE4E34;
+}
+
+body{
+    background-color: #FCEDDA;
+    background:linear-gradient(0deg, rgba(252, 237, 218, 0.5), rgba(252, 237, 218, 0.5)),url(./images/plane2.jpg);
+    background-size: cover;
+}
+
+
+#page-cotainer{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.content-section{
+    /* max-width: 70em; */
+    height: fit-content;
+    width: fit-content;
+    /* justify-content: center; */
+    margin: 2em;
+    /* margin-bottom: 2em; */
+}
+.content-section-box{
+    border: .25em solid black;
+    -webkit-border-radius: 13px;
+    border-radius: 2em;
+    /* min-width: 150px; */
+    /* height: auto; */
     padding: 1em;
-    line-height: 150%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
-.content-sections{
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: nowrap; */
+
+.content-section p{
+    max-width: 17em;
+    font-size: 1.5em;
+    line-height: 2em;
 }
 
 
-.content-sections-text p{
-    width: 1em;
-}
-
-.content-sections h2{
+.content-section h2{
+    position: relative;
     font-size: 2em;
     text-shadow: 0px 5px 7px #EE4E34;
     margin-left: 2em;
 }
 
+.content-section h2 a{
+    color: black;
+    text-decoration: none;
+}
 
-.content-sections img{
+
+.content-section img{
     border: 2px solid black;
     width: 222px;
     height: 296px;
     order: 2;
 }
 
-
-/* .content-sections h2 {
-    font-size: 2rem;
-    color: #e0dfdc;
-    background-color: #567;
-    letter-spacing: .1em;
-    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
-} */
-
-#page-container{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    /* align-items:flex-end; */
-    /* padding: 2em;
-    margin-left: 35em; */
-    /* flex-wrap: wrap; */
-}
-
-
 #footer{
     background-color: #EE4E34;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
     height: 2.5em;
     text-align: center;
     font-weight: bold;
+}
+#footer h3{
+    padding-top: 1em;
 }
