@@ -1,14 +1,8 @@
-/* @font-face {
-    font-family: 'Poppins';
-    src: url('./font/Poppins/Poppins-Black.ttf');
-} */
-/* html, body{
-    font-family: "Poppins", sans-serif;
-} */
 html * {
     font-family: "Poppins", sans-serif;
 }
 /* Hex codes: Peach #FCEDDA, Burnt Orange #EE4E34 */
+/* Header Styling */
 header{
     background-color: #EE4E34;
     width: 100%;
@@ -51,6 +45,7 @@ nav ul li{
     font-weight: bold;
     
 }
+
 #navlink:hover{
     text-shadow: 2px 2px grey;
     border: 3px solid black;
@@ -63,14 +58,13 @@ nav ul li{
     color: #FFFFFF;
     /* background: #EE4E34; */
 }
-
+/* Background Image */
 body{
     background-color: #FCEDDA;
     background:linear-gradient(0deg, rgba(252, 237, 218, 0.5), rgba(252, 237, 218, 0.5)),url(./images/plane2.jpg);
     background-size: cover;
 }
-
-
+/* Main page container */
 #page-cotainer{
     display: flex;
     flex-flow: row wrap;
@@ -78,12 +72,13 @@ body{
     /* align-items: baseline; */
     
 }
-
+/* Content box styling and outline */
 .content-section{
     height: fit-content;
     width: fit-content;
     margin: 2em;
 }
+
 .content-section-box{
     border: .25em solid black;
     -webkit-border-radius: 13px;
@@ -95,13 +90,20 @@ body{
     justify-content: space-between;
 
 }
+/* Getting one item to flex different from the rest */
+#big{
+    flex: 2 0 65%;
+}
+
+#small{
+    flex: 2 1 35%;
+}
 
 .content-section p{
     max-width: 17em;
     font-size: 1.5em;
     line-height: 2em;
 }
-
 
 .content-section h2{
     position: relative;
@@ -115,21 +117,13 @@ body{
     text-decoration: none;
 }
 
-
 .content-section img{
     border: 2px solid black;
     width: 222px;
     height: 296px;
     order: 2;
 }
-
-#big{
-    flex: 2 0 65%;
-}
-#small{
-    flex: 2 1 35%;
-}
-
+/* Footer styling */
 #footer{
     font-family: "Poppins", sans-serif;
     background-color: #EE4E34;
@@ -140,6 +134,7 @@ body{
     text-align: center;
     font-weight: bold;
 }
+
 #footer h3{
     padding-top: 1em;
 }
