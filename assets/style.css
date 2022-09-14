@@ -2,17 +2,20 @@
     font-family: 'Poppins';
     src: url('./font/Poppins/Poppins-Black.ttf');
 } */
-html, body{
-    font-family: 'Poppins', sans-serif;
+/* html, body{
+    font-family: "Poppins", sans-serif;
+} */
+html * {
+    font-family: "Poppins", sans-serif;
 }
 /* Hex codes: Peach #FCEDDA, Burnt Orange #EE4E34 */
 header{
     background-color: #EE4E34;
-    /* display: inline; */
     width: 100%;
 }
 
 header h1{
+    font-family: "Poppins", sans-serif;
     font-size: 2em;
     font-weight: bolder;
     padding-top: 1em;
@@ -34,6 +37,7 @@ nav{
 }
 
 nav ul li{
+    font-family: "Poppins", sans-serif;
     display: inline;
 }
 
@@ -127,6 +131,7 @@ body{
 }
 
 #footer{
+    font-family: "Poppins", sans-serif;
     background-color: #EE4E34;
     position: sticky;
     bottom: 0;
